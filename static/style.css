@@ -1,0 +1,118 @@
+/* Reset default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+}
+
+/* Form card */
+.login-form {
+  background-color: #ffffff;
+  padding: 30px 28px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333333;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 16px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555555;
+  font-weight: 600;
+}
+
+/* Inputs & Select */
+.form-control {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Input focus */
+.form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* Dropdown arrow fix */
+select.form-control {
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+/* Submit button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Button hover */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Result text */
+.result {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c7be5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+  .login-form {
+    padding: 22px 18px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+}
